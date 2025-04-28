@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #28a745;
+  --secondary: #343a40;
+  --accent: #007bff;
+  --light: #f8f9fa;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--secondary);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.btn-success {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.text-success {
+  color: var(--primary) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  border-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  border-color: #128C7E;
+}
+
+/* Efectos para tarjetas */
+.card {
+  transition: all 0.3s ease;
+  border-radius: 15px !important;
+}
+
+.card:hover {
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Mejoras para imágenes */
+.card-img-top {
+  transition: all 0.3s ease;
+}
+
+/* Efecto de zoom suave */
+.img-zoom-effect {
+  transition: transform 0.5s ease;
+}
+
+.img-zoom-effect:hover {
+  transform: scale(1.05);
+}
+
+/* Animaciones para la página de producto */
+.product-detail-animation {
+  animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mejoras para botones */
+.btn-success {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+}
