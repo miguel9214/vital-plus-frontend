@@ -16,7 +16,7 @@ export const ProductProvider = ({ children }) => {
         "Ayuda a la recuperación muscular"
       ],
       usage: "Tomar 1 medida diaria disuelta en agua o leche",
-      price: 29.99,
+      price: 115.000,
       contains: "Contiene edulcorantes",
       featured: true
     },
@@ -32,7 +32,7 @@ export const ProductProvider = ({ children }) => {
         "Bajo en lactosa"
       ],
       usage: "Mezclar 1 scoop con 250ml de agua o leche",
-      price: 39.99,
+      price: 115.000,
       contains: "Sabor a vainilla",
       featured: true
     },
@@ -48,7 +48,7 @@ export const ProductProvider = ({ children }) => {
         "Reduce inflamación"
       ],
       usage: "Tomar 1 cucharada al día con alimentos",
-      price: 24.99,
+      price: 115.000,
       contains: "Derivado de aceites vegetales",
       featured: true
     },
@@ -64,7 +64,7 @@ export const ProductProvider = ({ children }) => {
         "Ayuda a reducir arrugas"
       ],
       usage: "Diluir 10g en agua, jugo o batido",
-      price: 34.99,
+      price: 115.000,
       contains: "Sin sabor, fácil de mezclar",
       featured: true
     }
