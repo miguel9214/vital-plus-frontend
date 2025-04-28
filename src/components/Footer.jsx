@@ -40,9 +40,9 @@ const Footer = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              <li className="mb-2"><i className="bi bi-envelope me-2"></i>info@vitalplus.com</li>
-              <li className="mb-2"><i className="bi bi-phone me-2"></i>+54 9 11 1234-5678</li>
-              <li><i className="bi bi-geo-alt me-2"></i>Buenos Aires, Argentina</li>
+              <li className="mb-2"><i className="bi bi-envelope me-2"></i>vitalplusaguachica@gmail.com</li>
+              <li className="mb-2"><i className="bi bi-phone me-2"></i>+57 3178519427</li>
+              <li><i className="bi bi-geo-alt me-2"></i>Aguachica, Cesar</li>
             </motion.ul>
           </div>
           

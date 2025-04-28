@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const WhatsAppButton = ({ product }) => {
   const handleClick = () => {
-    const phoneNumber = '5491112345678' // Reemplaza con tu número
+    const phoneNumber = '573178519427' // Reemplaza con tu número
     const message = `Hola, estoy interesado en comprar ${product.name} ($${product.price}). ¿Podrías darme más información?`
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     
