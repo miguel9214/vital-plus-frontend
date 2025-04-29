@@ -36,7 +36,7 @@ const ProductPage = () => {
               whileHover={{ scale: 1.02 }}
             >
               <motion.img 
-                src={`/src/assets/images/${product.image}`} 
+                src={`/images/${product.image}`} 
                 alt={product.name}
                 className="img-fluid"
                 style={{ 

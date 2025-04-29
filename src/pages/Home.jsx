@@ -1,13 +1,14 @@
 import { useProducts } from '../context/ProductContext'
 import ProductCard from '../components/ProductCard'
 import { motion } from 'framer-motion'
+import HeroCarousel from '../components/HeroCarousel'
 
 const Home = () => {
   const { featuredProducts } = useProducts()
 
   return (
     <div className="overflow-hidden">
-      {/* Hero Section */}
+      {/* Hero Section - Reemplazada por el carrusel */}
       <section className="py-5 bg-success bg-opacity-10">
         <div className="container py-5">
           <div className="row align-items-center">
@@ -40,17 +41,7 @@ const Home = () => {
               </motion.a>
             </div>
             <div className="col-lg-6">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4 }}
-              >
-                <img 
-                  src="/src/assets/images/calci-shake.png" 
-                  alt="Suplementos Vital Plus" 
-                  className="img-fluid rounded shadow-lg"
-                />
-              </motion.div>
+              <HeroCarousel /> {/* Usa el nuevo componente de carrusel aquí */}
             </div>
           </div>
         </div>

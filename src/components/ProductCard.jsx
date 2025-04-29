@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
       <div className="card-img-top bg-light p-4 d-flex align-items-center justify-content-center" 
            style={{ height: '280px' }}>
         <motion.img 
-          src={`/src/assets/images/${product.image}`} 
+          src={`/images/${product.image}`} 
           alt={product.name}
           className="img-fluid"
           style={{ 

@@ -11,7 +11,7 @@ const WhatsAppButton = ({ product }) => {
     Swal.fire({
       title: `¿Comprar ${product.name}?`,
       text: `Serás redirigido a WhatsApp para completar tu pedido`,
-      imageUrl: `/src/assets/images/${product.image}`,
+      imageUrl: `/images/${product.image}`,
       imageHeight: 150,
       imageAlt: product.name,
       showCancelButton: true,

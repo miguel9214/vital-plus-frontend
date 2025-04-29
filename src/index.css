@@ -118,3 +118,29 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
 }
+
+/* Estilos para el carrusel */
+.slick-dots {
+  bottom: 20px !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #28a745 !important;
+}
+
+/* Ajustes para responsive */
+@media (max-width: 768px) {
+  .hero-carousel img {
+    height: 300px !important;
+  }
+  
+  .hero-text {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
