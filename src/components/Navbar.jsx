@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import { FaShoppingCart } from 'react-icons/fa'
-import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   return (
@@ -21,32 +21,37 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            {['Inicio', 'Productos', 'Contacto'].map((item, index) => (
-              <motion.li 
-                key={item}
-                className="nav-item"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 * index }}
-              >
-                <Link 
-                  className="nav-link px-3" 
-                  to={item === 'Inicio' ? '/' : `#${item.toLowerCase()}`}
-                >
-                  {item}
-                </Link>
-              </motion.li>
-            ))}
+            <motion.li 
+              className="nav-item"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+            >
+              <Link className="nav-link px-3" to="/">Inicio</Link>
+            </motion.li>
+            <motion.li 
+              className="nav-item"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Link className="nav-link px-3" to="/productos">Productos</Link>
+            </motion.li>
+            <motion.li 
+              className="nav-item"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <Link className="nav-link px-3" to="/contacto">Contacto</Link>
+            </motion.li>
             <motion.li 
               className="nav-item"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <Link 
-                className="nav-link px-3" 
-                to="#"
-              >
+              <Link className="nav-link px-3" to="/carrito">
                 <FaShoppingCart className="fs-5" />
               </Link>
             </motion.li>
@@ -54,7 +59,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

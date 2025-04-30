@@ -3,9 +3,23 @@ import ProductCard from "../components/ProductCard";
 import { motion } from "framer-motion";
 import HeroCarousel from "../components/HeroCarousel";
 import HealthCalculator from "../components/HealthCalculator";
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
   const { featuredProducts } = useProducts();
+  const productsSectionRef = useRef(null);
+  const location = useLocation();
+
+  // Efecto para desplazarse a la sección de productos si la ruta es "/productos"
+  useEffect(() => {
+    if (location.pathname === "/productos" && productsSectionRef.current) {
+      // Pequeño retraso para asegurar que la página se ha renderizado completamente
+      setTimeout(() => {
+        productsSectionRef.current.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location.pathname]);
 
   return (
     <div className="overflow-hidden">
@@ -52,8 +66,12 @@ const Home = () => {
       {/* Nueva sección de calculadora */}
       <HealthCalculator />
 
-      {/* Products Section */}
-      <section id="productos" className="py-5 bg-white">
+      {/* Products Section - Con ref para navegación */}
+      <section 
+        id="productos" 
+        className="py-5 bg-white"
+        ref={productsSectionRef}  // Añadimos la referencia aquí
+      >
         <div className="container py-4">
           <motion.div
             className="text-center mb-5"
