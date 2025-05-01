@@ -41,7 +41,7 @@ const ProductCard = ({ product }) => {
         <div className="d-flex justify-content-between align-items-center mt-auto">
           <span className="fw-bold text-primary fs-4">${product.price.toFixed(2)}</span>
           <Link 
-            to={`/product/${product.id}`} 
+            to={`/producto/${product.id}`} 
             className="btn btn-success rounded-pill px-3 py-2"
           >
             <i className="bi bi-eye-fill me-2"></i> Ver más
