@@ -51,9 +51,9 @@ const Navbar = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <Link className="nav-link px-3" to="/carrito">
+              {/* <Link className="nav-link px-3" to="/carrito">
                 <FaShoppingCart className="fs-5" />
-              </Link>
+              </Link> */}
             </motion.li>
           </ul>
         </div>

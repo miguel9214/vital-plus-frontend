@@ -64,7 +64,7 @@ const ContactPage = () => {
                   <FaMapMarkerAlt size={24} />
                 </div>
                 <h4 className="fw-bold">Ubicación</h4>
-                <p className="text-muted">Calle 123 #45-67, Bogotá, Colombia</p>
+                <p className="text-muted">Carrera 15a 9 61, Aguachica, Colombia</p>
                 <a 
                   href="https://maps.google.com" 
                   target="_blank" 
@@ -88,7 +88,7 @@ const ContactPage = () => {
                   <FaPhoneAlt size={24} />
                 </div>
                 <h4 className="fw-bold">Teléfono</h4>
-                <p className="text-muted">+57 1 234 5678</p>
+                <p className="text-muted">+57 317 851 9427</p>
                 <a 
                   href="tel:+5712345678" 
                   className="btn btn-outline-success mt-auto"
@@ -180,49 +180,58 @@ const ContactPage = () => {
 
       {/* WhatsApp Float Button */}
       <motion.div
-        className="whatsapp-float"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1 }}
-        whileHover={{ scale: 1.1 }}
-      >
-        <a 
-          href="https://wa.me/573123456789" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="d-flex align-items-center justify-content-center"
-        >
-          <FaWhatsapp size={28} className="text-white" />
-        </a>
-      </motion.div>
+  className="whatsapp-float"
+  initial={{ opacity: 0, scale: 0.5 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ delay: 1 }}
+  whileHover={{ scale: 1.1 }}
+>
+  <a 
+    href="https://wa.me/573178519427?text=Hola,%20estoy%20interesado%20en%20más%20información%20sobre%20los%20productos." 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <FaWhatsapp size={28} className="text-white" />
+  </a>
+</motion.div>
 
-      {/* Estilos */}
-      <style jsx>{`
-        .contact-hero {
-          background: linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
-        }
-        .icon-wrapper {
-          width: 60px;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .whatsapp-float {
-          position: fixed;
-          bottom: 30px;
-          right: 30px;
-          width: 60px;
-          height: 60px;
-          background-color: #25D366;
-          border-radius: 50%;
-          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-          z-index: 100;
-        }
-        .object-fit-cover {
-          object-fit: cover;
-        }
-      `}</style>
+<style jsx>{`
+  .whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    z-index: 100;
+  }
+
+  .whatsapp-float a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-hero {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+  }
+`}</style>
     </motion.div>
   );
 };

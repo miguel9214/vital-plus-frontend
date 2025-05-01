@@ -21,7 +21,7 @@ export const ProductProvider = ({ children }) => {
         "✓ 15g de proteína por porción",
         "✓ 500mg de calcio elemental",
         "✓ 5g de colágeno hidrolizado",
-        "✓ Enriquecido con vitamina D",
+        "✓ Endulzado con stevia",
         "✓ Rico sabor a vainilla"
       ],
       usage: "Mezclar 1 medida (30g) en 250ml de agua o leche. Consumir preferentemente en el desayuno o como snack post-entrenamiento.",
@@ -77,13 +77,14 @@ export const ProductProvider = ({ children }) => {
         "Perfil completo de aminoácidos esenciales",
         "Absorción rápida - ideal para post-entrenamiento",
         "Bajo en lactosa y fácil digestión",
-        "Mezcla cremosa y deliciosa en múltiples sabores"
+        "Endulzado con stevia",
+        "Rico sabor a vainilla"
       ],
       highlights: [
         "✓ 24g de proteína por scoop",
         "✓ 5.5g de BCAA naturales",
         "✓ 4g de glutamina por porción",
-        "✓ Menos de 1g de azúcar",
+        "✓ Endulzado con stevia",
         "✓ Enzimas digestivas incluidas"
       ],
       usage: "Mezclar 1 scoop (30g) con 250-300ml de agua o leche. Consumir inmediatamente después del entrenamiento o entre comidas como snack proteico.",
@@ -148,7 +149,8 @@ export const ProductProvider = ({ children }) => {
         "Contiene HMB y DHA para desarrollo muscular y cognitivo",
         "Mejora la salud cardiovascular y función cerebral",
         "Promueve recuperación muscular y energía sostenida",
-        "Sin azúcares añadidos ni grasas trans"
+        "Endulzado con stevia",
+        "Rico sabor a vainilla"
       ],
       highlights: [
         "✓ 12g de proteína por porción",
@@ -228,7 +230,8 @@ export const ProductProvider = ({ children }) => {
         "Mejora visiblemente la elasticidad de la piel en 8 semanas",
         "Fortalece uñas y cabello desde la raíz",
         "Alivia dolores articulares y mejora movilidad",
-        "Sin sabor y fácil de incorporar en cualquier bebida"
+        "Endulzado con stevia",
+        "Rico sabor a vainilla"
       ],
       highlights: [
         "✓ 10g de colágeno hidrolizado por porción",

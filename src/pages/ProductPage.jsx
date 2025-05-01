@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 import { useProducts } from '../context/ProductContext';
 import WhatsAppButton from '../components/WhatsAppButton';
 import NutritionTable from '../components/NutritionTable';
@@ -8,6 +9,11 @@ const ProductPage = () => {
   const { id } = useParams();
   const { getProductById, formatPriceCOP } = useProducts();
   const product = getProductById(id);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
 
   if (!product) {
     return (
