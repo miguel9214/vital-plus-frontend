@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const ProductCard = ({ product }) => {
@@ -41,11 +41,9 @@ const ProductCard = ({ product }) => {
         <div className="d-flex justify-content-between align-items-center mt-auto">
           <span className="fw-bold text-primary fs-4">${product.price.toFixed(2)}</span>
           <Link 
-            to={`/product/${product.id}`} 
-            className="btn btn-success rounded-pill px-4 py-2" // Ajusté el padding
-            style={{ fontSize: '2vw' }} // Ajusté el tamaño de fuente basado en el ancho del viewport
-          >
-            <i className="bi bi-eye-fill me-2"></i> Ver más
+            to={`/producto/${product.id}`} 
+            className="btn btn-success rounded-pill px-3 py-2"
+          > Ver más
           </Link>
         </div>
       </div>

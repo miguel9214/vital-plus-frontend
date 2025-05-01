@@ -1,7 +1,16 @@
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaClock } from 'react-icons/fa';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ContactPage = () => {
+  const location = useLocation();
+  
+  // Efecto para scroll al inicio al cargar la página
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -90,7 +99,7 @@ const ContactPage = () => {
                 <h4 className="fw-bold">Teléfono</h4>
                 <p className="text-muted">+57 317 851 9427</p>
                 <a 
-                  href="tel:+5712345678" 
+                  href="tel:+573178519427" 
                   className="btn btn-outline-success mt-auto"
                 >
                   Llamar ahora
@@ -180,58 +189,58 @@ const ContactPage = () => {
 
       {/* WhatsApp Float Button */}
       <motion.div
-  className="whatsapp-float"
-  initial={{ opacity: 0, scale: 0.5 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ delay: 1 }}
-  whileHover={{ scale: 1.1 }}
->
-  <a 
-    href="https://wa.me/573178519427?text=Hola,%20estoy%20interesado%20en%20más%20información%20sobre%20los%20productos." 
-    target="_blank" 
-    rel="noopener noreferrer"
-  >
-    <FaWhatsapp size={28} className="text-white" />
-  </a>
-</motion.div>
+        className="whatsapp-float"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 1 }}
+        whileHover={{ scale: 1.1 }}
+      >
+        <a 
+          href="https://wa.me/573178519427?text=Hola,%20estoy%20interesado%20en%20más%20información%20sobre%20los%20productos." 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp size={28} className="text-white" />
+        </a>
+      </motion.div>
 
-<style jsx>{`
-  .whatsapp-float {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    border-radius: 50%;
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-    z-index: 100;
-  }
+      <style jsx>{`
+        .whatsapp-float {
+          position: fixed;
+          bottom: 30px;
+          right: 30px;
+          width: 60px;
+          height: 60px;
+          background-color: #25D366;
+          border-radius: 50%;
+          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+          z-index: 100;
+        }
 
-  .whatsapp-float a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+        .whatsapp-float a {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
 
-  .contact-hero {
-    background: linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
-  }
+        .contact-hero {
+          background: linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
 
-  .icon-wrapper {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+        .icon-wrapper {
+          width: 60px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
 
-  .object-fit-cover {
-    object-fit: cover;
-  }
-`}</style>
+        .object-fit-cover {
+          object-fit: cover;
+        }
+      `}</style>
     </motion.div>
   );
 };
