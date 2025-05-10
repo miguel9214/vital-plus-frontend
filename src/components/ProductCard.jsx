@@ -39,7 +39,7 @@ const ProductCard = ({ product }) => {
           ))}
         </ul>
         <div className="d-flex justify-content-between align-items-center mt-auto">
-          <span className="fw-bold text-primary fs-4">${product.price.toFixed(2)}</span>
+          <span className="fw-bold text-primary fs-4">${product.price}</span>
           <Link 
             to={`/producto/${product.id}`} 
             className="btn btn-success rounded-pill px-3 py-2"
